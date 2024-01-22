@@ -11,13 +11,8 @@ void setup() {
 
 void loop() {
   char dato = Serial.read();
-  if(dato=='4'){
-   encender();
-  }
-  else if(dato=='5'){
-    apagar();
-  }
-  else if(dato=='1'){
+
+  if(dato=='1'){
     digitalWrite(pin1,HIGH);
   }
   else if(dato=='2'){
@@ -26,6 +21,13 @@ void loop() {
   else if(dato=='3'){
     digitalWrite(pin3,HIGH);
   }
+  if(dato=='4'){
+   encender();
+  } 
+  else if(dato=='5'){
+    apagar();
+  }
+  
 }
 
 void encender() {
