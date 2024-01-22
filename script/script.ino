@@ -21,7 +21,7 @@ void loop() {
   else if(dato=='3'){
     digitalWrite(pin3,HIGH);
   }
-  if(dato=='4'){
+  else if(dato=='4'){
    encender();
   } 
   else if(dato=='5'){
